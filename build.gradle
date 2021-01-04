@@ -18,10 +18,14 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven {
+         url "https://maven.tomtom.com:8443/nexus/content/repositories/releases/"
+         } 
+        // Replace this line with the TomTom Maven repository
+
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-
